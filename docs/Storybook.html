@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Storybook for the Web Engineering Module</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            --left-indent: 2rem;
+            --color-accent: rgba(42, 0, 192, 0.74);
+            --color-gray: rgb(174, 173, 176);
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--color-accent);
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            color: var(--color-accent);
+        }
+
+        header {
+            background-color: var(--color-accent);
+            color: white;
+            padding-left: var(--left-indent);
+            padding-top: calc(var(--left-indent)*2);
+            padding-bottom: calc(var(--left-indent));
+            font-size: 2em;
+        }
+
+        section {
+            margin-left: var(--left-indent);
+            margin-bottom: 2em;
+        }
+
+        footer {
+            background-color: var(--color-gray);
+            color: white;
+            padding-left: var(--left-indent);
+            padding-top: calc(var(--left-indent)*2);
+            padding-bottom: calc(var(--left-indent)*1.5);
+        }
+
+        table {
+            border-collapse: separate;
+            border-spacing: 0;
+        }
+
+        table caption {
+            font-weight: bold;
+            padding: 0.3em;
+        }
+
+        table tr td,
+        table tr th {
+            border-left: 1px solid black;
+            border-top: 1px solid black;
+            padding: 0.4em;
+        }
+
+        table tr td:last-child,
+        table tr th:last-child {
+            border-right: 1px solid black;
+        }
+
+        table tfoot td {
+            border-bottom: 1px solid black;
+        }
+
+        main abbr,
+        main dfn,
+        main a,
+        footer a {
+            color: var(--color-accent);
+            text-decoration: underline;
+        }
+
+        table tr.primary{
+            font-weight: bold;
+        }
+
+        table tr.secondary{
+            color: var(--color-gray);
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <dfn title="Drehbuch">Storybook</dfn> for the Web Engineering Module
+    </header>
+    <main>
+        <section id="context">
+            <h1>Module delivery mode</h1>
+            <p> This installment of the <dfn title="WebEngineering">webeC</dfn> module is
+                delivered in the spring semester of 2018.
+            </p>
+        </section>
+        <section id="content">
+            <h1>Delivery dates and examination details</h1>
+            <article>
+                <h2>Overview</h2>
+                <table>
+                    <caption>Delivery dates</caption>
+                    <thead>
+                        <tr>
+                            <th> Date </th>
+                            <th> # </th>
+                            <th>Topic</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>18.09.18</td>
+                            <td>12:15 - 15:00</td>
+                            <td>HTML</td>
+                        </tr>
+                        <tr>
+                            <td>25.09.18</td>
+                            <td>12:15 - 15:00</td>
+                            <td>CSS</td>
+                        </tr>
+                        <tr>
+                            <td>02.10.18</td>
+                            <td>12:15 - 15:00</td>
+                            <td>Grails, Web, MVC, Test</td>
+                        </tr>
+                        <tr>
+                            <td>09.10.18</td>
+                            <td>12:15 - 15:00</td>
+                            <td>GSP, Template, Taglib, Layout</td>
+                        </tr>
+                        <tr>
+                            <td>16.10.18</td>
+                            <td>12:15 - 15:00</td>
+                            <td>Javascript</td>
+                        </tr>
+                        <tr>
+                            <td>23.10.18</td>
+                            <td>12:15 - 15:00</td>
+                            <td>Consolidation training</td>
+                        </tr>
+                        <tr>
+                            <td>30.10.18</td>
+                            <td>12:15 - 15:00</td>
+                            <td>Persistence, DB-Access (GORM)</td>
+                        </tr>
+                        <tr>
+                            <td>06.11.18</td>
+                            <td>12:15 - 15:00</td>
+                            <td>REST, Services</td>
+                        </tr>
+                        <tr>
+                            <td>13.11.18</td>
+                            <td>12:15 - 15:00</td>
+                            <td>Role-based Security</td>
+                        </tr>
+                        <tr class="primary">
+                            <td>20.11.18</td>
+                            <td>12:15 - 15:00</td>
+                            <td>Übungsvorbereitung ** Anwesenheitspflicht **</td>
+                        </tr>
+                        <tr>
+                            <td>04.12.18</td>
+                            <td>12:15 - 15:00</td>
+                            <td>Übungsanlass</td>
+                        </tr>
+                        <tr>
+                            <td>11.12.18</td>
+                            <td>12:15 - 15:00</td>
+                            <td>Responsive / Mobile Web</td>
+                        </tr>
+                        <tr class="primary">
+                            <td>18.12.18</td>
+                            <td>12:15 - 15:00</td>
+                            <td>Weihnachtsvorlesung, ** Übungsabgabe **</td>
+                        </tr>
+                        <tr class="secondary">
+                            <td>25.12.18</td>
+                            <td></td>
+                            <td>Ferien</td>
+                        </tr>
+                        <tr>
+                            <td>08.01.19</td>
+                            <td>12:15 - 15:00</td>
+                            <td>Deployment</td>
+                        </tr>
+                        <tr class="secondary">
+                            <td>15.01.19</td>
+                            <td>12:15 - 15:00</td>
+                            <td>Prüfungsvorbereitung</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3"> MSP date to be announced</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </article>
+            <article>
+                <h2> Total Effort</h2>
+                <p> Classroom lectures add up to <code>13 * 3h = 39h</code>.</p>
+                <p> Prework and afterwork, including homework adds up to <code>13 * 2h = 26h</code>.</p>
+                <p> The exercise for the continuous assessment grade takes <code>3 * 5h = 15h</code>.</p>
+                <p> Preparation for the final exam will take approximately <code>8h</code>.</p>
+                <p> Writing the final exam takes <code>2h</code>.</p>
+                <p> This makes a total of <code>90h</code>.</p>
+            </article>
+            <article id="criteria">
+                <h2> Passing criteria </h2>
+                <ul>
+                    <li>You have to attend the exercise preparation event.</li>
+                    <li>You have to do the exercise and deliver before the deadline.</li>
+                    <li>You have to attend the <dfn title="Modulschlussprüfung">final exam (MSP)</dfn>.</li>
+                </ul>
+                <p> Your exercise will determine your <abbr title="Erfahrungsnote">continuous assessment grade (EN)</abbr>.
+                </p>
+                <p> EN and MSP together make your final grade. </p>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <address>Dierk König, 5.2B16, <a href="mailto:dierk.koenig@fhnw.ch">dierk.koenig@fhnw.ch</a></address>
+    </footer>
+</body>
+
+</html>
